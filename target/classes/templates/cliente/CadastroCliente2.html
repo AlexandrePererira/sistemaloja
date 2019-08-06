@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt" xmlns="http://www.w3.org/1999/xhtml" 
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorator="'layout/LayoutPadrao'">
+	
+  <head>
+      <title>Cadastro de Clientes 1</title>
+      
+
+  </head>
+      <body>
+        <section>
+         <div class="page-header">
+		    <div class="container-fluid" align="center">
+                    <h1>
+                        Cadastro de clientes
+                    </h1>
+             </div>    
+		</div>
+            
+<!--         <div class="container-fluid">     -->
+<!-- 		<form method="POST" th:object="${cliente}" class="form-vertical  js-form-loading">  -->
+		
+<!-- 			<th:block th:include="fragments/MensagensErroValidacao"></th:block> -->
+	
+<!-- 			<div class="row"> -->
+<!-- 				<div class="col-sm-8  form-group" th:classappend="${#fields.hasErrors('nome')} ? has-error"> -->
+<!-- 					<label for="nome" class="control-label">Nome</label> -->
+<!-- 					<input id="nome" type="text" class="form-control" th:field="*{nome}"/> -->
+<!-- 				</div>			 -->
+				
+<!-- 			</div> -->
+<!--             <div class="row"> -->
+<!--               <div class="col-sm-2  form-group" th:classappend="${#fields.hasErrors('dataNascimento')} ? has-error"> -->
+<!-- 					<label for="dataNascimento" class="control-label">Data Nascimento</label> -->
+<!-- 					<input id="dataNascimento" type="date" class="form-control" th:field="*{dataNascimento}"/> -->
+<!--                </div> -->
+                
+<!--                  <div class="col-sm-3  form-group" th:classappend="${#fields.hasErrors('rg')} ? has-error"> -->
+<!-- 					<label for="rg" class="control-label">RG</label> -->
+<!-- 					<input id="rg" type="text" class="form-control" th:field="*{rg}"/> -->
+<!--                </div>   -->
+                
+<!--               <div class="col-sm-3  form-group" th:classappend="${#fields.hasErrors('cpf')} ? has-error"> -->
+<!-- 					<label for="cpf" class="control-label">CPF</label> -->
+<!-- 					<input id="cpf" type="text" class="form-control" th:field="*{cpf}"/> -->
+<!--                </div>   -->
+                
+<!--                <div class="col-lg-3  col-sm-6  form-group" th:classappend="${#fields.hasErrors('sexo')} ? has-error"> -->
+<!-- 					<label for="sexo" class="control-label">Sexo</label> -->
+<!-- 					<div> -->
+<!-- 						<th:block th:each="sexo : ${sexos}"> -->
+<!-- 							<div class="radio  radio-inline"> -->
+<!-- 								<input th:id="|id_${sexo}|" type="radio" th:value="${sexo}" th:field="*{sexo}">  -->
+<!-- 								<label th:for="|id_${sexo}|" th:text="${sexo.descricao}">Masculino</label> -->
+                               
+<!-- 							</div> -->
+<!--                             <div class="radio  radio-inline"> -->
+<!-- 								<input th:id="|id_${sexo}|" type="radio" th:value="${sexo}" th:field="*{sexo}">  -->
+<!-- 								<label th:for="|id_${sexo}|" th:text="${sexo.descricao}">Feminimo</label> -->
+                               
+<!-- 							</div> -->
+<!-- 						</th:block> -->
+                        
+<!-- 					</div> -->
+<!-- 				</div> -->
+            
+            
+<!--             </div> -->
+
+		
+
+<!-- 			<div class="row"> -->
+         
+                
+<!-- 				<div class="col-sm-2  form-group" th:classappend="${#fields.hasErrors('nome')} ? has-error"> -->
+<!-- 					<label for="cidade" class="control-label">Cidade</label> -->
+<!-- 					<div class="bw-field-action"> -->
+<!-- 						<select id="cidade" class="form-control" th:field="*{cidade}"> -->
+<!-- 							<option value="">Selecione a cidade</option> -->
+<!-- 							<option th:each="cidade : ${cidades}" th:value="${cidade.codigo}" th:text="${cidade.nome}">Pale lager</option> -->
+<!-- 						</select> -->
+						
+<!-- 						<div class="bw-field-action__icon"> -->
+<!-- 							<a href="#" data-toggle="modal" data-target="#modalCadastroRapidoCidade"> -->
+<!-- 								<i class="glyphicon  glyphicon-plus-sign  bw-glyphicon-large"></i> -->
+<!-- 							</a> -->
+<!-- 						</div> -->
+<!-- 					</div> -->
+<!-- 				</div> -->
+                
+<!--                  <div class="col-sm-2  form-group" th:classappend="${#fields.hasErrors('bairro')} ? has-error"> -->
+<!-- 					<label for="bairro" class="control-label">Bairro</label> -->
+<!-- 					<input id="bairro" type="text" class="form-control" th:field="*{bairro}"/> -->
+<!--                 </div>  -->
+                 
+<!--                  <div class="col-sm-3  form-group" th:classappend="${#fields.hasErrors('logradouro')} ? has-error"> -->
+<!-- 					<label for="logradouro" class="control-label">Logradouro</label> -->
+<!-- 					<input id="logradouro" type="text" class="form-control" th:field="*{logradouro}"/> -->
+<!--                </div>  -->
+                
+<!--                  <div class="col-sm-3  form-group" th:classappend="${#fields.hasErrors('complemento')} ? has-error"> -->
+<!-- 					<label for="complemento" class="control-label">Complemento</label> -->
+<!-- 					<input id="complemento" type="text" class="form-control" th:field="*{complemento}"/> -->
+<!--                </div>   -->
+				
+				
+				
+<!-- 			</div> -->
+			
+<!-- 			<div class="row"> -->
+                
+<!--               <div class="col-sm-3  form-group"> -->
+<!-- 					<label for="telefone" class="control-label">Telefone</label> -->
+<!-- 					<input id="telefone" type="text" class="form-control" th:field="*{telefone}"/> -->
+<!--                </div>  -->
+               
+<!--                <div class="col-sm-3  form-group" > -->
+<!-- 					<label for="celular" class="control-label">Celular</label> -->
+<!-- 					<input id="celular" type="text" class="form-control" th:field="*{celular}"/> -->
+<!--                </div>  -->
+                
+<!-- 				<div class="col-sm-2  form-group" th:classappend="${#fields.hasErrors('limite')} ? has-error"> -->
+<!-- 					<label for="limite" class="control-label">Limite</label> -->
+<!-- 					<div class="input-group"> -->
+<!-- 						<div class="input-group-addon">R$</div> -->
+<!-- 						<input id="limite" type="text" class="form-control  js-decimal" th:field="*{limite}"/> -->
+<!-- 					</div> -->
+<!-- 				</div> -->
+                
+<!--                 <div class="col-sm-2  form-group" > -->
+<!-- 					<label for="dataCadastro" class="control-label">Data Cadastro</label> -->
+<!-- 					<input id="dataCadastro" type="date" class="form-control" th:field="*{dataCadastro}"/> -->
+<!--                </div>  -->
+				
+		
+<!-- 			</div> -->
+			
+<!-- 			<div class="form-group"> -->
+<!-- 				<button class="btn  btn-primary" type="submit">Salvar</button> -->
+<!-- 			</div> -->
+	
+<!-- 		</form> -->
+<!--         </div>  -->
+          
+        </section> 
+     
+       
+      </body>
+
+       
+</html>
